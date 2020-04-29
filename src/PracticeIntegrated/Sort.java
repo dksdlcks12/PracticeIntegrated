@@ -1,4 +1,4 @@
-package action;
+package PracticeIntegrated;
 
 import java.util.Scanner;
 

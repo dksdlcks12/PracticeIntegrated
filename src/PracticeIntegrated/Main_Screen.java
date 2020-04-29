@@ -1,10 +1,8 @@
-package performance;
+package PracticeIntegrated;
 
 import java.util.Scanner;
 
-import action.Sort;
-
-public class Performance {
+public class Main_Screen {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
