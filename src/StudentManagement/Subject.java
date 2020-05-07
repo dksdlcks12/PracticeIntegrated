@@ -6,18 +6,17 @@ public class Subject {
 	private int finals;
 	private int performance;
 	private int attendance;
-	
 	public void print() {
-		System.out.printf("----------------------------------------------------\n");
+		System.out.printf("-----------------------------\n");
 		System.out.printf("%s\n", title);
 		System.out.printf("중간고사 : %d\n", midterm);
 		System.out.printf("기말고사 : %d\n", finals);
 		System.out.printf("수행평가 : %d\n", performance);
 		System.out.printf("출석점수 : %d\n", attendance);
+		System.out.printf("-----------------------------\n");
 	}
 
 	public Subject(String title, int midterm, int finals, int performance, int attendance) {
-		super();
 		this.title = title;
 		this.midterm = midterm;
 		this.finals = finals;

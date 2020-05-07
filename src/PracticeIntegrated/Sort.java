@@ -1,7 +1,5 @@
 package PracticeIntegrated;
 
-import java.util.Scanner;
-
 public class Sort {
 	private static void bubble(int num) {
 		int cont=0;
@@ -158,24 +156,23 @@ public class Sort {
 		}
 	}
 	public static void prtsort() {
-		Scanner getnum = new Scanner(System.in);
 		System.out.println("0.뒤로가기 1.버블정렬, 2.선택정렬, 3.삽입정렬");
 		System.out.print("확인하고 싶은 정렬방법의 번호를 입력하십시오. : ");
-		int menu = getnum.nextInt(), size = 0, change = 1;
+		int menu = Main_Screen.getnum.nextInt(), size = 0, change = 1;
 		while(menu<0 || 3<menu) {
 			System.out.println("입력하신 번호는 없는 번호 입니다. 다시 입력하여 주십시오.");
 			System.out.println("0.뒤로가기 1.버블정렬, 2.선택정렬, 3.삽입정렬");
 			System.out.print("확인하고 싶은 정렬방법의 번호를 입력하십시오. : ");
-			menu = getnum.nextInt();
+			menu = Main_Screen.getnum.nextInt();
 		}
 		while(menu!=0) {
 			if(change==1) {
 				System.out.print("범위 설정을 위해 양수형 정수를 입력하여 주십시오. : ");
-				size = getnum.nextInt();
+				size = Main_Screen.getnum.nextInt();
 				while(size<=0) {
 					System.out.println("0이나 음수형 정수를 입력하셨습니다.");
 					System.out.print("범위 설정을 위해 양수형 정수를 입력하여 주십시오. : ");
-					size = getnum.nextInt();
+					size = Main_Screen.getnum.nextInt();
 					change = 2;
 				}
 			}
@@ -188,22 +185,22 @@ public class Sort {
 			}
 			System.out.println("0.뒤로가기 1.버블정렬, 2.선택정렬, 3.삽입정렬");
 			System.out.print("확인하고 싶은 정렬방법의 번호를 입력하십시오. : ");
-			menu = getnum.nextInt();
+			menu = Main_Screen.getnum.nextInt();
 			while(menu<0 || 3<menu) {
 				System.out.println("입력하신 번호는 없는 번호 입니다. 다시 입력하여 주십시오.");
 				System.out.println("0.뒤로가기 1.버블정렬, 2.선택정렬, 3.삽입정렬");
 				System.out.print("확인하고 싶은 정렬방법의 번호를 입력하십시오. : ");
-				menu = getnum.nextInt();
+				menu = Main_Screen.getnum.nextInt();
 			}
 			if(menu==0) {
 				break;
 			}
 			System.out.print("범위를 수정하려면 1번, 수정하지 않으려면 2번을 입력하십시오. : ");
-			change = getnum.nextInt();
+			change = Main_Screen.getnum.nextInt();
 			while(change<1 || 2<change) {
 				System.out.println("입력하신 번호는 없는 번호 입니다. 다시 입력하여 주십시오.");
 				System.out.print("범위를 수정하려면 1번, 수정하지 않으려면 2번을 입력하십시오. : ");
-				change = getnum.nextInt();
+				change = Main_Screen.getnum.nextInt();
 			}
 		}
 	}

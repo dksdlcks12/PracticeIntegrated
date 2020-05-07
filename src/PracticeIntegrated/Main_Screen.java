@@ -3,10 +3,9 @@ package PracticeIntegrated;
 import java.util.Scanner;
 
 public class Main_Screen {
-
+	static Scanner getnum = new Scanner(System.in);
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner getnum = new Scanner(System.in);
+		// TODO Auto-generated method stub	
 		System.out.println("0.종료, 1.정렬, 2. , 3. ");
 		System.out.print("확인하고 싶은 목차의 번호를 입력하십시오. : ");
 		int menu = getnum.nextInt();

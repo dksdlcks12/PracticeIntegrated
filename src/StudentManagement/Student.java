@@ -1,12 +1,21 @@
 package StudentManagement;
 
 public class Student {
-	private String name="";
 	private int grade;
 	private int group;
 	private int num;
+	private String name="";
 	private Subject score[];
 	
+	public Student(Student student) {
+		grade = student.grade;
+		group = student.group;
+		num = student.num;
+		name = student.name;
+	}
+	public void prtStudent() {
+		System.out.printf("%2d학년, %d반, %d번 이름 : %s\n", grade, group, num, name);
+	}
 	public boolean equal(int grade, int group, int num, String name) {
 		if(this.grade!=grade) {
 			return false;
@@ -55,10 +64,20 @@ public class Student {
 			this.score[i] = new Subject(score[i]);
 		}
 	}
+	
 	public void prtScort() {
 		for(Subject tmp : score) {
 			tmp.print();
 		}
+	}
+	public Student() {
+		
+	}
+	public Student(int grade, int group, int num, String name) {
+		this.grade = grade;
+		this.group = group;
+		this.num = num;
+		this.name = name;
 	}
 	
 }
