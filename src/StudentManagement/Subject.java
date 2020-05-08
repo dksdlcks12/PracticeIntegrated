@@ -8,7 +8,7 @@ public class Subject {
 	private int attendance;
 	public void print() {
 		System.out.printf("-----------------------------\n");
-		System.out.printf("%s\n", title);
+		System.out.printf(" 과목명  : %s\n", title);
 		System.out.printf("중간고사 : %d\n", midterm);
 		System.out.printf("기말고사 : %d\n", finals);
 		System.out.printf("수행평가 : %d\n", performance);
@@ -30,6 +30,10 @@ public class Subject {
 		performance = subject.performance;
 		attendance = subject.attendance;
 		title = subject.title;
+	}
+
+	public Subject() {
+		
 	}
 
 	public String getTitle() {

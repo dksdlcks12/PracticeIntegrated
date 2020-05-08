@@ -12,24 +12,10 @@ public class Student {
 		group = student.group;
 		num = student.num;
 		name = student.name;
+		score = student.score;
 	}
 	public void prtStudent() {
 		System.out.printf("%2d학년, %d반, %d번 이름 : %s\n", grade, group, num, name);
-	}
-	public boolean equal(int grade, int group, int num, String name) {
-		if(this.grade!=grade) {
-			return false;
-		}
-		if(this.group!=group) {
-			return false;
-		}
-		if(this.num!=num) {
-			return false;
-		}
-		if(!this.name.equals(name)) {
-			return false;
-		}
-		return true;
 	}
 	public String getName() {
 		return name;
@@ -64,8 +50,7 @@ public class Student {
 			this.score[i] = new Subject(score[i]);
 		}
 	}
-	
-	public void prtScort() {
+	public void prtScore() {
 		for(Subject tmp : score) {
 			tmp.print();
 		}
